@@ -1,1 +1,39 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Journal</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <section class="card headline">
+      <h1>Weather Journal App</h1>
+      <p class="subtitle">Track your mood and the weather!</p>
+    </section>
+    <section class="card input-card">
+      <form id="weatherForm" autocomplete="off">
+        <div class="form-group">
+          <label for="zip">Enter Zipcode</label>
+          <input type="text" id="zip" placeholder="Enter zip code here" required>
+        </div>
+        <div class="form-group">
+          <label for="feelings">How are you feeling today?</label>
+          <textarea class="myInput" id="feelings" placeholder="Enter your feelings here" rows="4" required></textarea>
+        </div>
+        <button id="generate" type="button" class="generate-btn">Generate</button>
+      </form>
+    </section>
+    <section class="card entry-card" id="entryHolder">
+      <div class="entry-content">
+        <p id="date" class="entry-date">Date:</p>
+        <p id="temp" class="entry-temp">Temp:</p>
+        <p id="content" class="entry-feelings">Feelings:</p>
+      </div>
+    </section>
+  </main>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
